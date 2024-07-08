@@ -9,4 +9,4 @@ Unreal Engine plugin.
 
 ## Examples
 
-- [Tank turret rotation - WorkInProgress]
+- [Tank turret rotation with PID controller example](https://github.com/Teklarit/TankTurretPIDExample.git)
