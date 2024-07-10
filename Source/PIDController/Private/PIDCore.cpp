@@ -1,4 +1,4 @@
-// Teklarit ©
+// Teklarit ©, 2024
 
 #include "PIDCore.h"
 

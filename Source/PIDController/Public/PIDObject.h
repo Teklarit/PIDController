@@ -1,4 +1,4 @@
-// Teklarit ©
+// Teklarit ©, 2024
 
 #pragma once
 
@@ -14,7 +14,7 @@ class PIDCONTROLLER_API UPIDObject : public UObject, public IPIDInterface
 	GENERATED_BODY()
 
 public:
-	UPROPERTY(EditAnywhere, BlueprintReadWrite/*, Category = "PID"*/)
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "PID")
 	FPIDCore PIDCore;
 
 	// PID Interface:

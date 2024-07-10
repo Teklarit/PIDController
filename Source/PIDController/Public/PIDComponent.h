@@ -1,4 +1,4 @@
-// Teklarit ©
+// Teklarit ©, 2024
 
 #pragma once
 
@@ -23,7 +23,7 @@ protected:
 	
 
 public:
-	UPROPERTY(EditAnywhere, BlueprintReadWrite/*, Category = "PID"*/)
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "PID")
 	FPIDCore PIDCore;
 
 // PID Interface:

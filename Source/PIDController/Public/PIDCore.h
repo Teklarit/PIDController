@@ -1,4 +1,4 @@
-// Teklarit ©
+// Teklarit ©, 2024
 
 #pragma once
 
@@ -19,13 +19,13 @@ public:
 	float GetSignalValue() const;
 
 public:
-	UPROPERTY(EditAnywhere, BlueprintReadWrite)
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "PID")
 	float Kp;
 
-	UPROPERTY(EditAnywhere, BlueprintReadWrite)
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "PID")
 	float Ki;
 
-	UPROPERTY(EditAnywhere, BlueprintReadWrite)
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "PID")
 	float Kd;
 
 private:
