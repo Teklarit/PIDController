@@ -14,9 +14,10 @@ public:
 	FPIDCore();
 	FPIDCore(const float InKp, const float InKi, const float InKd);
 
+	void Init(const float InKp = 0.0f, const float InKi = 0.0f, const float InKd = 0.0f);
 	float Tick(float Difference, float DeltaTime);
-	void Reset();
 	float GetSignalValue() const;
+	void Reset();
 
 public:
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "PID")

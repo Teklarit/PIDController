@@ -2,6 +2,11 @@
 
 #include "PIDObject.h"
 
+void UPIDObject::Init_Implementation(const float InKp, const float InKi, const float InKd)
+{
+	PIDCore.Init(InKp, InKi, InKd);
+}
+
 float UPIDObject::GetKp_Implementation() const
 {
 	return PIDCore.Kp;

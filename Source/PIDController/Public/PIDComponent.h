@@ -28,6 +28,8 @@ public:
 
 // PID Interface:
 public:
+	void Init_Implementation(const float InKp, const float InKi, const float InKd) override;
+
 	virtual float GetKp_Implementation() const override;
 	virtual void SetKp_Implementation(const float InKp) override;
 

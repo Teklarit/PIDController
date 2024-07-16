@@ -18,6 +18,9 @@ class PIDCONTROLLER_API IPIDInterface
 
 public:
 	UFUNCTION(BlueprintCallable, BlueprintNativeEvent, Category = "PIDController")
+	void Init(const float InKp = 0.0f, const float InKi = 0.0f, const float InKd = 0.0f);
+
+	UFUNCTION(BlueprintCallable, BlueprintNativeEvent, Category = "PIDController")
 	float GetKp() const;
 	UFUNCTION(BlueprintCallable, BlueprintNativeEvent, Category = "PIDController")
 	void SetKp(const float InKp);
