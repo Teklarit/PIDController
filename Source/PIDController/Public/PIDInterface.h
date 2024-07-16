@@ -39,7 +39,7 @@ public:
 	float GetSignalValue() const;
 
 	UFUNCTION(BlueprintCallable, BlueprintNativeEvent, Category = "PIDController", meta = (ReturnDisplayName = "SignalValue"))
-	float Tick(float Difference, float DeltaTime);
+	float Tick(const float Difference, const float DeltaTime);
 
 	UFUNCTION(BlueprintCallable, BlueprintNativeEvent, Category = "PIDController")
 	void Reset();

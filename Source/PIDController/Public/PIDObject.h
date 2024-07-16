@@ -19,7 +19,7 @@ public:
 
 	// PID Interface:
 public:
-	void Init_Implementation(const float InKp, const float InKi, const float InKd) override;
+	virtual void Init_Implementation(const float InKp, const float InKi, const float InKd) override;
 
 	virtual float GetKp_Implementation() const override;
 	virtual void SetKp_Implementation(const float InKp) override;
@@ -31,7 +31,7 @@ public:
 	virtual void SetKd_Implementation(const float InKd) override;
 
 	virtual float GetSignalValue_Implementation() const override;
-	virtual float Tick_Implementation(float Difference, float DeltaTime) override;
+	virtual float Tick_Implementation(const float Difference, const float DeltaTime) override;
 	virtual void Reset_Implementation() override;
 
 };

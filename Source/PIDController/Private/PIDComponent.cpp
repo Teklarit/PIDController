@@ -49,7 +49,7 @@ float UPIDComponent::GetSignalValue_Implementation() const
 	return PIDCore.GetSignalValue();
 }
 
-float UPIDComponent::Tick_Implementation(float Difference, float DeltaTime)
+float UPIDComponent::Tick_Implementation(const float Difference, const float DeltaTime)
 {
 	return PIDCore.Tick(Difference, DeltaTime);
 }

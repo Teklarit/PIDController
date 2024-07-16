@@ -29,7 +29,7 @@ void FPIDCore::Init(const float InKp, const float InKi, const float InKd)
 	Kd = InKd;
 }
 
-float FPIDCore::Tick(float Difference, float DeltaTime)
+float FPIDCore::Tick(const float Difference, const float DeltaTime)
 {
 	if (FMath::IsNearlyZero(DeltaTime))
 	{

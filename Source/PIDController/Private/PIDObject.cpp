@@ -42,7 +42,7 @@ float UPIDObject::GetSignalValue_Implementation() const
 	return PIDCore.GetSignalValue();
 }
 
-float UPIDObject::Tick_Implementation(float Difference, float DeltaTime)
+float UPIDObject::Tick_Implementation(const float Difference, const float DeltaTime)
 {
 	return PIDCore.Tick(Difference, DeltaTime);
 }
