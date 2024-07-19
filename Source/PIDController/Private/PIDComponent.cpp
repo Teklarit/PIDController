@@ -9,6 +9,11 @@ UPIDComponent::UPIDComponent()
 	PrimaryComponentTick.bStartWithTickEnabled = false;
 }
 
+void UPIDComponent::Init_Implementation(const float InKp, const float InKi, const float InKd)
+{
+	PIDCore.Init(InKp, InKi, InKd);
+}
+
 float UPIDComponent::GetKp_Implementation() const
 {
 	return PIDCore.Kp;
@@ -44,7 +49,7 @@ float UPIDComponent::GetSignalValue_Implementation() const
 	return PIDCore.GetSignalValue();
 }
 
-float UPIDComponent::Tick_Implementation(float Difference, float DeltaTime)
+float UPIDComponent::Tick_Implementation(const float Difference, const float DeltaTime)
 {
 	return PIDCore.Tick(Difference, DeltaTime);
 }

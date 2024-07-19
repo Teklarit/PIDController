@@ -1,6 +1,6 @@
 // Teklarit ©, 2024
 
-#include "PIDController.h"
+#include "PIDControllerModule.h"
 
 #define LOCTEXT_NAMESPACE "FPIDControllerModule"
 

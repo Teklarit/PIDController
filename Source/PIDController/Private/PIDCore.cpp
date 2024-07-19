@@ -22,7 +22,14 @@ FPIDCore::FPIDCore(const float InKp, const float InKi, const float InKd)
 {
 }
 
-float FPIDCore::Tick(float Difference, float DeltaTime)
+void FPIDCore::Init(const float InKp, const float InKi, const float InKd)
+{
+	Kp = InKp;
+	Ki = InKi;
+	Kd = InKd;
+}
+
+float FPIDCore::Tick(const float Difference, const float DeltaTime)
 {
 	if (FMath::IsNearlyZero(DeltaTime))
 	{
@@ -45,14 +52,14 @@ float FPIDCore::Tick(float Difference, float DeltaTime)
 	return SignalValue;
 }
 
+float FPIDCore::GetSignalValue() const
+{
+	return SignalValue;
+}
+
 void FPIDCore::Reset()
 {
 	SignalValue = 0.0f;
 	PrevError = 0.0f;
 	ErrorSum = 0.0f;
-}
-
-float FPIDCore::GetSignalValue() const
-{
-	return SignalValue;
 }
