@@ -1,4 +1,4 @@
-// Teklarit ©, 2024
+// Teklarit Â©, 2024
 
 #pragma once
 
