@@ -10,7 +10,7 @@
 	"DocsURL": "https://teklarit.github.io/PIDControllerDocumentation/#/./",
 	"MarketplaceURL" : "com.epicgames.launcher://ue/marketplace/product/b4fffe1b1c9c4bb9b30160cd84ee6077",
 	"SupportURL": "",
-	"EngineVersion": "5.4.0",
+	"EngineVersion": "5.5.0",
 	"CanContainContent": false,
 	"IsBetaVersion": false,
 	"IsExperimentalVersion": false,
